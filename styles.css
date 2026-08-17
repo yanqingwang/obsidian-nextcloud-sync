@@ -1,0 +1,36 @@
+.nextcloud-sync-log {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+}
+
+.nextcloud-sync-log-entry {
+  display: flex;
+  gap: 0.5em;
+  padding: 1px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.nextcloud-sync-log-entry .nc-log-level {
+  font-weight: 600;
+  width: 4.5em;
+  flex: none;
+}
+
+.nextcloud-sync-log-entry .nc-log-action {
+  width: 9em;
+  flex: none;
+  color: var(--text-muted);
+}
+
+.nextcloud-sync-log-entry .nc-log-path {
+  flex: 1 1 auto;
+  word-break: break-all;
+}
+
+.nextcloud-sync-log-entry.nc-level-error .nc-log-level {
+  color: var(--text-error);
+}
+
+.nextcloud-sync-log-entry.nc-level-warn .nc-log-level {
+  color: var(--text-warning);
+}
