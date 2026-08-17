@@ -26,7 +26,7 @@ export default class NextcloudSyncPlugin extends Plugin {
 	async onload(): Promise<void> {
 		await this.loadSettings();
 
-		const pluginDir = `${this.app.vault.configDir}/plugins/nextcloud-sync`;
+		const pluginDir = `${this.app.vault.configDir}/plugins/${this.manifest.id}`;
 		this.stateStore = new StateStore(this.app.vault.adapter, `${pluginDir}/sync-state.json`);
 		await this.stateStore.load();
 		// 日志落盘（位于 .obsidian，被本插件忽略）

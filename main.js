@@ -1095,7 +1095,7 @@ var NextcloudSyncPlugin = class extends import_obsidian7.Plugin {
   }
   async onload() {
     await this.loadSettings();
-    const pluginDir = `${this.app.vault.configDir}/plugins/nextcloud-sync`;
+    const pluginDir = `${this.app.vault.configDir}/plugins/${this.manifest.id}`;
     this.stateStore = new StateStore(this.app.vault.adapter, `${pluginDir}/sync-state.json`);
     await this.stateStore.load();
     this.logStore = new LogStore(this.app.vault.adapter, `${pluginDir}/logs`, this.settings.logRetentionDays);

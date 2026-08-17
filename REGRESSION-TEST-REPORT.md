@@ -98,5 +98,5 @@ npm test          # 等价：esbuild 打包 test/all.test.ts → node --test
 ## 6. 交付状态
 
 - 代码：16 个源文件 + 7 个测试文件，全部通过类型检查与单元回归。
-- 构建产物：`main.js`（43,388 B）、`manifest.json`（id=`nextcloud-sync`, v0.1.0）、`styles.css`。
+- 构建产物：`main.js`（43,388 B）、`manifest.json`（id=`obsidian-nextcloud-sync`, v0.1.0）、`styles.css`。
 - 下一步：发布到 GitHub（tag `0.1.0`，无 `v` 前缀）+ 提交 Obsidian 社区插件市场 PR + 安装到 `test` vault。
